@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num_alquiler: 1
+  fecha_out: 2015-11-11
+  fecha_in: 2015-11-11
+  pelicula_id: 
+  cliente_id: 
+
+two:
+  num_alquiler: 1
+  fecha_out: 2015-11-11
+  fecha_in: 2015-11-11
+  pelicula_id: 
+  cliente_id: 

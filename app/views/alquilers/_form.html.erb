@@ -1,0 +1,37 @@
+<%= form_for(@alquiler) do |f| %>
+  <% if @alquiler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alquiler.errors.count, "error") %> prohibited this alquiler from being saved:</h2>
+
+      <ul>
+      <% @alquiler.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :num_alquiler %><br>
+    <%= f.number_field :num_alquiler %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_out %><br>
+    <%= f.date_select :fecha_out %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_in %><br>
+    <%= f.date_select :fecha_in %>
+  </div>
+  <div class="field">
+    <%= f.label :pelicula_id %><br>
+   <%= f.select("pelicula_id",Pelicula.all.collect {|l| [l.titulo, l.id ] }, { include_blank: 'Seleccione Pelicula'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :cliente_id %><br>
+   <%= f.select("cliente_id",Cliente.all.collect {|l| [l.nombre, l.id ] }, { include_blank: 'Seleccione Cliente'}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

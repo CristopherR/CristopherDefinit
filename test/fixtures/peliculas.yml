@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_pel: 1
+  titulo: MyString
+  ano: 1
+  categoria: MyString
+
+two:
+  cod_pel: 1
+  titulo: MyString
+  ano: 1
+  categoria: MyString

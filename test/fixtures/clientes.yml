@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_cli: 1
+  nombre: MyString
+  apellido: MyString
+  direccion: MyString
+
+two:
+  cod_cli: 1
+  nombre: MyString
+  apellido: MyString
+  direccion: MyString

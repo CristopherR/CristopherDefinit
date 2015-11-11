@@ -1,0 +1,25 @@
+<%= form_for(@vendedor_cliente) do |f| %>
+  <% if @vendedor_cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vendedor_cliente.errors.count, "error") %> prohibited this vendedor_cliente from being saved:</h2>
+
+      <ul>
+      <% @vendedor_cliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cliente_id %><br>
+   <%= f.select("cliente_id",Cliente.all.collect {|l| [l.nombre, l.id ] }, { include_blank: 'Seleccione Cliente'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :vendedor_id %><br>
+   <%= f.select("vendedor_id",Vendedor.all.collect {|l| [l.nombreV, l.id ] }, { include_blank: 'Seleccione Vendedor'}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

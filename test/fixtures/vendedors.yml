@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_vendedor: 1
+  nombreV: MyString
+  apellidoV: MyString
+  direccionV: MyString
+
+two:
+  cod_vendedor: 1
+  nombreV: MyString
+  apellidoV: MyString
+  direccionV: MyString

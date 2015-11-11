@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod vendedor:</strong>
+  <%= @vendedor.cod_vendedor %>
+</p>
+
+<p>
+  <strong>Nombrev:</strong>
+  <%= @vendedor.nombreV %>
+</p>
+
+<p>
+  <strong>Apellidov:</strong>
+  <%= @vendedor.apellidoV %>
+</p>
+
+<p>
+  <strong>Direccionv:</strong>
+  <%= @vendedor.direccionV %>
+</p>
+
+<%= link_to 'Edit', edit_vendedor_path(@vendedor) %> |
+<%= link_to 'Back', vendedors_path %>
